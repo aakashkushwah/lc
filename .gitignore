@@ -1,0 +1,58 @@
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Build output
+/build/
+*/build/
+
+# Gradle
+.gradle/
+!gradle-wrapper.jar
+
+# Maven
+/target/
+
+# Generated class files
+**/*.class
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# Test results
+test-results/
+
+# Spring Boot
+spring.log
+
+# IDE specific
+.vscode/
+
+# Local env
+.env
+
+# Other
+binary/
+
+# Keep the wrapper properties but ignore the rest
+/gradle/wrapper/gradle-wrapper.jar
+
+# Ignore build output under the build folder in the repository root and other modules
+/build/
+
+# Lock files (if any other tools appear)
+*.lock
+
+# Exclude compiled native images
+native/
+

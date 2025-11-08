@@ -1,0 +1,15 @@
+### GET request to example server
+GET http://localhost:9090/api/echo?msg="hello aakash"
+
+###
+
+POST http://localhost:11434/api/generate
+Content-Type: application/json
+
+{
+  "model": "llama3",
+  "prompt": "Write a short haiku about Spring Boot"
+}
+
+###
+GET http://localhost:9090/ask?prompt=Tell me a joke about Java
