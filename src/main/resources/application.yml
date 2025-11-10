@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: lc
+
+logging:
+  pattern:
+    console: {"timestamp":"%d{yyyy-MM-dd HH:mm:ss}", "level":"%p", "thread":"%t", "service":"acctmgmt", "logger":"%c", "message":"%m"}
+
+server:
+  port: 9090
+
+groq:
+    api-key: <API_KEY>
+    base-url: https://api.groq.com/openai/v1
+    model: openai/gpt-oss-20b

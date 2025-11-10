@@ -3,7 +3,6 @@ package com.example.lc.service;
 import com.example.lc.util.Utils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
 import java.util.Map;
 
@@ -30,9 +29,7 @@ public class OllamaService {
                 .bodyToMono(String.class)
                 .block();
 
-        String chatResponse = Utils.getResponseFromOllamaResponse(res);
-
-        return chatResponse;
+        return Utils.getResponseFromOllamaResponse(res);
     }
 }
 
