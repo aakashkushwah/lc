@@ -7,9 +7,17 @@ logging:
     console: {"timestamp":"%d{yyyy-MM-dd HH:mm:ss}", "level":"%p", "thread":"%t", "service":"acctmgmt", "logger":"%c", "message":"%m"}
 
 server:
-  port: 9090
+  port: 9091
 
 groq:
     api-key: <API_KEY>
     base-url: https://api.groq.com/openai/v1
     model: openai/gpt-oss-20b
+
+solace:
+  host: tcp://localhost:55554
+  vpn: default
+  username: admin
+  password: admin
+jms:
+  queueName: myConsumerQueue

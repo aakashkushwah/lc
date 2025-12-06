@@ -34,6 +34,8 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation("com.solace.spring.boot:solace-jms-spring-boot-starter:5.2.0")
+    implementation("jakarta.jms:jakarta.jms-api:3.0.0")
 }
 
 tasks.named('test') {

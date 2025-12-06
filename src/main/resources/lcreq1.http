@@ -17,3 +17,7 @@ GET http://localhost:9090/ask?prompt=Tell me a joke about Java
 ###
 GET http://localhost:9090/ask/groq?prompt=tell me a pj
 
+
+###
+GET http://localhost:9090/ask/test-pub
+
